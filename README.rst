@@ -1,7 +1,7 @@
 Regional Nudging in NorESM2.2 Documentation
 ============================
 
-This is not yet operational.
+This is not yet operational. Below is random text.
 
 --------
 
@@ -18,3 +18,9 @@ Links:
 https://noresm22-nudging-regional.readthedocs.io/en/latest/
 
 https://readthedocs.org/
+
+https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html
+
+https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
+
+https://docs.readthedocs.io/en/stable/tutorial/index.html
