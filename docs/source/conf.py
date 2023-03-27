@@ -7,8 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'NorESM2.2-Nudging'
-copyright = '2023, Lina Boljka, Ingo Bethke'
-author = 'Lina Boljka, Ingo Bethke'
+#copyright = '2023, Lina Boljka, Ingo Bethke'
+#author = 'Lina Boljka, Ingo Bethke'
+author = 'Lina Boljka'
 release = '0.1'
 
 # -- General configuration ---------------------------------------------------
