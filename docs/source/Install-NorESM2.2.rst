@@ -1,2 +1,2 @@
-Installing NorESM2.2
+Install NorESM2.2
 =============================================
