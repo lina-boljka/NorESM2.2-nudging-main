@@ -9,6 +9,7 @@
 project = 'NorESM2.2-Nudging'
 #copyright = '2023, Lina Boljka, Ingo Bethke'
 #author = 'Lina Boljka, Ingo Bethke'
+copyright = '2023, Lina Boljka'
 author = 'Lina Boljka'
 release = '0.1'
 
