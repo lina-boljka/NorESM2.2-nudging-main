@@ -1,2 +1,2 @@
-Getting AMIP configuration running
+AMIP configuration
 =============================================
