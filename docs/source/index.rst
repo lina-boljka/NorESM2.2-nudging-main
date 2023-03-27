@@ -3,8 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to NorESM2.2-Nudging's documentation!
+NorESM2.2 Nudging Documentation
 =============================================
+
+This page is not yet operational - below is random text!
+
+----------
 
 $project
 ========
