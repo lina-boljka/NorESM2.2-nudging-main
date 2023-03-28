@@ -1,8 +1,6 @@
 Install NorESM2.2
 =============================================
 
-``Important`` 
-
 .. warning::
   Before continuing with the installation of NorESM2.2 please be aware 
   that this is a preliminary (in development) version of the model and 
