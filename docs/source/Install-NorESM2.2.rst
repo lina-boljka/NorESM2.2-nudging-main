@@ -4,9 +4,6 @@ Install NorESM2.2
 To install NorESM2.2 follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/access/download_code.html#make-a-clone-of-the-noresm-repository/>`_:
 
 1) First clone the NorESM repository to a folder <noresm-base>:
-
- :: 
- 
  git clone https://github.com/NorESMhub/NorESM.git <noresm-base>
 
 2) Then enter the specified directory:
