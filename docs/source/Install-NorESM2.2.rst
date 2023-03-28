@@ -4,8 +4,8 @@ Install NorESM2.2
 .. warning::
   Before continuing with the installation of NorESM2.2 please be aware 
   that this is a preliminary (in development) version of the model, which 
-  has not yet been released. Thus, care must be taken when using the 
-  results of this model version (pre-release). Also, only a limited 
+  has not yet been released or properly tested. Thus, care must be taken when 
+  using the results of this model version (pre-release). Also, only a limited 
   number of compsets is presently working.
 
 ---------------------
