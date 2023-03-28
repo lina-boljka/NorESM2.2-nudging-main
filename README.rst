@@ -28,3 +28,5 @@ https://docs.readthedocs.io/en/stable/tutorial/index.html
 https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/examples.rst # examples
 
 https://docutils.sourceforge.io/docs/user/rst/cheatsheet.txt # cheatsheet
+
+https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#block-quotes # more documentation on .rst
