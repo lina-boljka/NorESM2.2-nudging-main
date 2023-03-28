@@ -1,6 +1,10 @@
 Install NorESM2.2
 =============================================
 
+Before continuing with the installation of NorESM2.2 please be aware that this is a preliminary (in development) version of the model and has not yet been released. Thus, care must be taken when using the results of this model version (pre-release). 
+
+---------------------
+
 To install NorESM2.2 follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/access/download_code.html#make-a-clone-of-the-noresm-repository/>`_:
 
 1) First clone the NorESM repository to a folder <noresm-base>: 
