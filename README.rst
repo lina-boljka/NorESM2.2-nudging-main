@@ -24,3 +24,5 @@ https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html
 https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
 
 https://docs.readthedocs.io/en/stable/tutorial/index.html
+
+https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/examples.rst # examples
