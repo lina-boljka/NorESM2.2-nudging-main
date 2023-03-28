@@ -7,7 +7,7 @@ To install NorESM2.2 follow instructions on `NorESM webpage <https://noresm-docs
   git clone https://github.com/NorESMhub/NorESM.git <noresm-base>  
   
 ..  code-block:: none
-    :caption: Page tree of directory :file:`vendor/composer`
+    :caption: Page tree of directory 
 
     $ tree vendor/composer
     ├── ClassLoader.php
