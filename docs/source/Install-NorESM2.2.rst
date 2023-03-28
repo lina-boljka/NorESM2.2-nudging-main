@@ -2,6 +2,7 @@ Install NorESM2.2
 =============================================
 
 .. role:: red
+
   ``Important`` 
 
 *Before continuing with the installation of NorESM2.2 please be aware that this is a preliminary (in development) version of the model and has not yet been released. Thus, care must be taken when using the results of this model version (pre-release). Also, only a limited number of compsets is presently working.*
