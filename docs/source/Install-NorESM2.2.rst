@@ -5,6 +5,16 @@ To install NorESM2.2 follow instructions on `NorESM webpage <https://noresm-docs
 
 1) First clone the NorESM repository to a folder <noresm-base>: 
   git clone https://github.com/NorESMhub/NorESM.git <noresm-base>  
+  
+..  code-block:: none
+    :caption: Page tree of directory :file:`vendor/composer`
+
+    $ tree vendor/composer
+    ├── ClassLoader.php
+    ├── LICENSE
+    ├── autoload_classmap.php
+    ├── ...
+    └── installed.json..  code-block:: none
 
 2) Then enter the specified directory:
   cd <noresm-base> 
