@@ -27,4 +27,4 @@ https://docs.readthedocs.io/en/stable/tutorial/index.html
 
 https://github.com/readthedocs/readthedocs.org/blob/main/docs/user/examples.rst # examples
 
-https://sphinx-rtd-theme.readthedocs.io/en/stable/demo/demo.html # paragraph mark-up
+https://docutils.sourceforge.io/docs/user/rst/cheatsheet.txt # cheatsheet
