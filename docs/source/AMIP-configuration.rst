@@ -46,10 +46,7 @@ and specify the following in user_nl_cam (if file does not exist create it)
     
   /
 
-Note that the path above is only relevant for "betzy" machine.
+Note that the path above is only relevant for "betzy" machine and can be set to another file if relevant. These variables (especially those set to "-1.0D0" should be specified to avoid an error where model is trying to run with both constant GHG/CFC gases and with time-evolving gases.
 
-4) However, instead of checking out a branch/release-tag with model version 2.0.x, check out the branch remotes/origin/noresm2.2, e.g.:
-  ``git checkout -b noresm2.2 origin/noresm2.2``
-
-For issues related to model installation (e.g. svn-related) see `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/access/download_code.html#make-a-clone-of-the-noresm-repository/>`_.
+4) Change other variables in user_nl_cam or other components, set environment variables in files starting with "env_", e.g., "env_run.xml" and setup, build and run the model as shown on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_.
 
