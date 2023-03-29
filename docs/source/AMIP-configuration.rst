@@ -20,12 +20,14 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
 3) List all available branches for checkout:
   ``git branch --all``
   
-.. admonition:: Specify the following in user_nl_cam
+.. admonition:: user_nl_cam
 
   &chem_surfvals_nl
   
     ch4vmr         = -1.0D0
+    
     co2vmr         = -1.0D0    
+    
     f11vmr         = -1.0D0
     
     f12vmr         = -1.0D0
