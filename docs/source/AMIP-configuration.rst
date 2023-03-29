@@ -20,7 +20,7 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
 3) List all available branches for checkout:
   ``git branch --all``
   
-..  attention::
+..  epigraph::
   BLA
 
 4) However, instead of checking out a branch/release-tag with model version 2.0.x, check out the branch remotes/origin/noresm2.2, e.g.:
