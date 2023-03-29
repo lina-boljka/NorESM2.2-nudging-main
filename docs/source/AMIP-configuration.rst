@@ -20,8 +20,17 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
 3) List all available branches for checkout:
   ``git branch --all``
   
-..  epigraph::
-  BLA
+``&chem_surfvals_nl
+  ch4vmr         = -1.0D0
+  co2vmr         = -1.0D0
+  f11vmr         = -1.0D0
+  f12vmr         = -1.0D0
+  flbc_file      = '/cluster/shared/noresm/inputdata/atm/waccm/lb/LBC_1750-2015_CMIP6_GlobAnnAvg_c180926.nc'
+  flbc_list      = 'CO2','CH4','N2O','CFC11eq','CFC12'
+  flbc_type      = 'SERIAL'
+  n2ovmr         = -1.0D0
+  scenario_ghg   = 'CHEM_LBC_FILE'
+/``
 
 4) However, instead of checking out a branch/release-tag with model version 2.0.x, check out the branch remotes/origin/noresm2.2, e.g.:
   ``git checkout -b noresm2.2 origin/noresm2.2``
