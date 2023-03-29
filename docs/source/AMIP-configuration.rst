@@ -21,8 +21,7 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
   ``git branch --all``
   
 .. admonition:: Custom label
-
-    The contents of the blue box.
+  The contents of the blue box.
   &chem_surfvals_nl
     ch4vmr         = -1.0D0
     co2vmr         = -1.0D0
