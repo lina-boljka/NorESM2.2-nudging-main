@@ -3,8 +3,7 @@ AMIP configuration
 
 .. warning::
   * Again, care must be taken when using the results of this model version (pre-release). 
-  * Only a limited number of compsets is presently working. Here, we show how to run a 
-  historical AMIP experiment.
+  * Only a limited number of compsets is presently working. Here, we show how to run a historical AMIP experiment.
 
 ---------------------
 
