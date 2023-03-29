@@ -17,8 +17,10 @@ To create an experiment ``case`` follow instructions on `NorESM webpage <https:/
 
 Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing (generally recommended for NorESM), and the model will run with project resources <project-name>, typically of form "nn1234k" or similar. Note that different AMIP compsets can be found here: ``<noresm-base>/components/cam/cime_config/config_compsets.xml``. 
 
-3) List all available branches for checkout:
-  ``git branch --all``
+3) Enter the folder 
+  ``~/<noresm-base>/cases/<case-name>/``
+
+and specify the following in user_nl_cam (if file does not exist create it)
   
 .. admonition:: user_nl_cam
 
@@ -43,6 +45,8 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
     scenario_ghg   = 'CHEM_LBC_FILE'
     
   /
+
+Note that the path above is only relevant for "betzy" machine.
 
 4) However, instead of checking out a branch/release-tag with model version 2.0.x, check out the branch remotes/origin/noresm2.2, e.g.:
   ``git checkout -b noresm2.2 origin/noresm2.2``
