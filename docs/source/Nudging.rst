@@ -14,6 +14,12 @@ Below is "non-relevant" text.
 
 ---------------------
 
+Regional nudging is implemented in the latest version of CESM (CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we merely show an example of such implementation in NorESM2.2.
+
+---------------------
+
+COPIED FROM AMIP-SITE:
+
 To create an experiment ``case`` follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_ or, more specifically, for AMIP experiments follow instructions `here <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_. Below we show an example for only one specific compset, which has historical prescribed sea-surface-temperatures (SSTs) and historical forcing, typically 1979-2014 (or longer).
 
 1) First enter the NorESM2.2 directory with scripts: 
