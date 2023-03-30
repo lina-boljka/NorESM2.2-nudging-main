@@ -9,7 +9,7 @@ AMIP configuration
 
 To create an experiment ``case`` follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_ or, more specifically, for AMIP experiments follow instructions `here <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_. Below we show an example for only one specific compset, which has historical prescribed sea-surface-temperatures (SSTs) and historical forcing, typically 1979-2014 (or longer).
 
-1) First enter the NorESM2.2 directory with scripts: 
+1) First enter the ``scripts`` folder of the  `NorESM2.2 <https://noresm22-nudging-regional.readthedocs.io/en/latest/Install-NorESM2.2.html>`_ directory: 
   ``~/<noresm-base>/cime/scripts/`` 
 
 2) Then run command to create a new case, e.g., <case-name>:
