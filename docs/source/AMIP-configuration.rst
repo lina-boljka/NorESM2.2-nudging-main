@@ -22,7 +22,7 @@ Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing
 
 and specify the following in user namelist ``user_nl_cam`` (if file does not exist create it)
   
-.. admonition:: user_nl_cam
+.. admonition:: 
 
   &chem_surfvals_nl
   
