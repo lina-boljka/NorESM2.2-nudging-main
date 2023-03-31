@@ -8,12 +8,6 @@ Regional Nudging
 
 ---------------------
 
-**This page is still under development.**
-
-Below is "non-relevant" text.
-
----------------------
-
 **Implementation**
 
 Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we show an example of such implementation in NorESM2.2, which is based on the CESM2.2.
