@@ -14,7 +14,9 @@ Below is "non-relevant" text.
 
 ---------------------
 
-Regional nudging is implemented in the latest version of the CESM (CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we merely show an example (a summary) of such implementation in NorESM2.2, which is based on the CESM2.2 version of the CESM.
+Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we merely show an example (a summary) of such implementation in NorESM2.2, which is based on the CESM2.2.
+
+
 
 ---------------------
 
