@@ -14,8 +14,7 @@ Below is "non-relevant" text.
 
 ---------------------
 
-Implementation
-====
+**Implementation**
 
 Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we show an example of such implementation in NorESM2.2, which is based on the CESM2.2.
 
@@ -61,8 +60,7 @@ Once you have created a case folder ``<case-name>`` (e.g., see `here <https://no
  
 ----------------
 
-Nudging Target Data
-====
+**Nudging Target Data**
 
 At the moment there is the following capability for nudging in NorESM2.2:
 
@@ -78,8 +76,7 @@ For now, we have only tested U & V nudging, while PS nudging is also available. 
 
 --------------------
 
-Example
-====
+**Example**
 
 Here is an example of the nudging part of the namelist script (``user_nl_cam``) for regional nudging over the North Pacific.
  
@@ -161,8 +158,7 @@ Here is an example of the nudging part of the namelist script (``user_nl_cam``) 
 
 ----------------
 
-Visualisation of the Nudging Window
-====
+**Visualisation of the Nudging Window**
 
 To visualise the nudging window used (e.g., prior to implementing it in the model) do the following:
 
@@ -172,8 +168,7 @@ To visualise the nudging window used (e.g., prior to implementing it in the mode
 
 ----------------
 
-Topography data
-====
+**Topography data**
 
 Also, topography data from a reanalysis can be specified in ``user_nl_cam``, although be aware that ERA5 topography may be very different from model topography and thus care must be taken!
 
