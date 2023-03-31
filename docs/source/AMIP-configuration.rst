@@ -10,15 +10,17 @@ AMIP configuration
 To create an experiment ``case`` follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_ or, more specifically, for AMIP experiments follow instructions `here <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_. Below we show an example for only one specific compset, which has historical prescribed sea-surface-temperatures (SSTs) and historical forcing, typically 1979-2014 (or longer).
 
 1) First enter the ``scripts`` folder of the  `NorESM2.2 <https://noresm22-nudging-regional.readthedocs.io/en/latest/Install-NorESM2.2.html>`_ directory: 
-  ``~/<noresm-base>/cime/scripts/`` 
+  ``cd ~/<noresm-base>/cime/scripts/`` 
 
 2) Then run command to create a new case, e.g., <case-name>:
   ``./create_newcase --case ~/<noresm-base>/cases/<case-name> --mach betzy --res f09_f09_mg17 --compset NFHISTfsstfrc2 --project <project-name>``
 
-Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing (generally recommended for NorESM), and the model will run with project resources <project-name>, typically of form "nn1234k" or similar. Note that different AMIP compsets can be found here: ``<noresm-base>/components/cam/cime_config/config_compsets.xml``. 
+Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing (generally recommended for NorESM), and the model will run with project resources <project-name>, typically of form "nn1234k" or similar. Note that different AMIP compsets can be found here: 
+
+``vi <noresm-base>/components/cam/cime_config/config_compsets.xml``. 
 
 3) Enter the folder 
-  ``~/<noresm-base>/cases/<case-name>/``
+  ``cd ~/<noresm-base>/cases/<case-name>/``
 
 and specify the following in user namelist ``user_nl_cam`` (if file does not exist create it)
   
