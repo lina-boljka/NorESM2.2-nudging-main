@@ -195,6 +195,7 @@ The above example of ``user_nl_cam`` yields a nudging window in the horizontal a
 .. image:: Wcoef_new2.png
   :width: 350
   :alt: Alternative text
+  :cap: bla bla
 
 ----------------
 
