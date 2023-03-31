@@ -70,9 +70,21 @@ At the moment there is the following capability for nudging in NorESM2.2:
   
   ``Nudge_File_Template= 'era5-ano_PSUV_f09L32_6hr_r0_%y%m%d%s.nc'``
   
-* bla
+* Full nudging to ERA5 data (i.e., climatology + anomalies) over the period 1979-2016. Data is available for PS, U, V variables only. Set the following path & file-name in ``user_nl_cam``:
+
+  ``Nudge_Path = '/cluster/projects/nn9039k/CAM_Nudging/met_data/era5_PSUV_f09L32_6hrFullFieldSingleRecord/'``
   
-For now, we have only tested U & V nudging, while PS nudging is also available. We expect to increase the number of variables available for nudging (to, e.g., T, Q). If you do not have access to the data specified above please contact us (lina.boljka@uib.no).
+  ``Nudge_File_Template= 'era5_PSUV_f09L32_6hr_r0_%y%m%d%s.nc'``
+
+* Full nudging to ERA-Interim data (i.e., climatology + anomalies) over the period 2001-2015. Data is available for PS, U, V, T, Q variables. Set the following path & file-name in ``user_nl_cam``:
+
+  ``Nudge_Path = '/cluster/projects/nn9039k/CAM_Nudging/met_data/ERAI_f09L32_vn2_2/'``
+  
+  ``Nudge_File_Template= '%y-%m-%d-%s.nc'``
+  
+For now, we have only tested U & V nudging, while PS nudging is also available in ERA5 and T,Q nudging is available in ERA-Interim. We expect to increase the number of variables available for nudging with ERA5 (to, e.g., T, Q) at a later time. 
+
+If you do not have access to the data specified above please contact us (lina.boljka@uib.no).
 
 --------------------
 
