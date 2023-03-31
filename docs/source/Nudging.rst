@@ -32,9 +32,9 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
     
     Nudge_TimeScale_Opt = 0 ! (=0 for weak nudging & =1 for strong nudging)
     
-    Nudge_Times_Per_Day= 4 ! for 6-hourly target data for nudging (e.g. ERA5)
+    Nudge_Times_Per_Day= 4 ! (for 6-hourly target data for nudging - e.g. ERA5)
     
-    Model_Times_Per_Day= 48 ! for a model with a 30-minute timestep (like NorESM2.2-AMIP)
+    Model_Times_Per_Day= 48 ! (for a model with a 30-minute timestep - like NorESM2.2-AMIP)
     
     Nudge_Uprof = 2
     
@@ -68,31 +68,29 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
     
     Nudge_End_Day = 31
     
-    Nudge_Hwin_lat0 = 45. ! 0.0
+    Nudge_Hwin_lat0 = 45. 
     
-    Nudge_Hwin_latWidth= 45. ! set to 999. for full longitudinal circle
+    Nudge_Hwin_latWidth= 45. ! (set to 999. for full longitudinal circle)
     
-    Nudge_Hwin_latDelta= 5.0 !2.0
+    Nudge_Hwin_latDelta= 5.0 
     
-    Nudge_Hwin_lon0 = 180. !180.
+    Nudge_Hwin_lon0 = 180. 
     
-    Nudge_Hwin_lonWidth= 100. ! set to 999. for full latitudinal circle
+    Nudge_Hwin_lonWidth= 100. ! (set to 999. for full latitudinal circle)
     
     Nudge_Hwin_lonDelta= 5. 
     
-    Nudge_Hwin_Invert =.false. ! set to .true. for inverted nudging window
+    Nudge_Hwin_Invert =.false. ! (set to .true. for inverted nudging window)
     
     Nudge_Vwin_Hindex = 33. 
     
-    Nudge_Vwin_Hdelta = 0.001 ! const vertical window ! set to a larger value (number of levels over which it tapers off)
+    Nudge_Vwin_Hdelta = 0.001 ! (const vertical window ; for non-const. set to a larger value, i.e., number of levels over which it tapers off)
     
-    Nudge_Vwin_Lindex = 13. !0.  full vertical extent !13.  troposphere only & taper off in lower stratosphere (lev 13 ~150 hPa; lev 15 ~200 hPa; lev 11 ~100 hPa) !32.  surface layer only
+    Nudge_Vwin_Lindex = 13. ! (=0.  full vertical extent ; =13.  troposphere only & taper off in lower stratosphere [lev 13 ~150 hPa; lev 15 ~200 hPa; lev 11 ~100 hPa] ; =32.  surface layer only)
     
-    Nudge_Vwin_Ldelta = 2. 
+    Nudge_Vwin_Ldelta = 2. ! (=2. taper-off over +/- 2 levels ; =0.001 const. vertical window)
     
-    ! 2. taper-off over +/- 2 levels ! 0.001 const. vertical window
-    
-    Nudge_Vwin_Invert =.false. ! set to .true. for inverted nudging window
+    Nudge_Vwin_Invert =.false. ! (set to .true. for inverted nudging window)
     
   /
 
