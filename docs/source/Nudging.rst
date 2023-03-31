@@ -117,6 +117,15 @@ For now, we have only tested U & V nudging, while PS nudging is also available. 
 
 ----------------
 
+To visualise the nudging window used (e.g., prior to implementing it in the model) do the following:
+
+1) ...
+
+2) ...
+
+
+----------------
+
 Also, topography data from a reanalysis can be specified in ``user_nl_cam``, although be aware that ERA5 topography may be very different from model topography and thus care must be taken!
 
 .. admonition:: user_nl_cam
