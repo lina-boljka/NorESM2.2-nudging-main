@@ -32,9 +32,9 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
     
     Nudge_TimeScale_Opt = 0 ! (=0 for weak nudging & =1 for strong nudging)
     
-    Nudge_Times_Per_Day= 4
+    Nudge_Times_Per_Day= 4 ! for 6-hourly target data for nudging (e.g. ERA5)
     
-    Model_Times_Per_Day= 48
+    Model_Times_Per_Day= 48 ! for a model with a 30-minute timestep (like NorESM2.2-AMIP)
     
     Nudge_Uprof = 2
     
