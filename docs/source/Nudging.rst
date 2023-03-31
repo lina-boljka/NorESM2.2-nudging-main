@@ -194,5 +194,5 @@ Also, topography data from a reanalysis can be specified in ``user_nl_cam``, alt
     
   /
 
-At the moment only the ERA-Interim topography data is available (as specified in the example above), i.e., it has not been tested with ERA5 topography.
+At the moment only the ERA-Interim topography data is available (as specified in the example above), i.e., we have not performed any tests with ERA5 topography.
 
