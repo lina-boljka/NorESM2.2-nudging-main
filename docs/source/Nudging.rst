@@ -189,11 +189,11 @@ To visualise the nudging window used (e.g., prior to implementing it in the mode
 The above example of ``user_nl_cam`` yields a nudging window in the horizontal and in the vertical as shown below.
 
 .. image:: Wcoef_new.png
-  :width: 400
+  :width: 800
   :alt: Alternative text
 
 .. image:: Wcoef_new2.png
-  :width: 400
+  :width: 300
   :alt: Alternative text
 
 ----------------
