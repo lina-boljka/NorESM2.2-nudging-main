@@ -22,23 +22,23 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
 
   &nudging_nl
   
-    Nudge_Model = .true.
+    Nudge_Model = .true. ! (set to .false. for no nudging)
     
     Nudge_Path = '/cluster/projects/nn9039k/CAM_Nudging/met_data/era5_PSUV_f09L32_6hrAnomalySingleRecord/'
     
     Nudge_File_Template= 'era5-ano_PSUV_f09L32_6hr_r0_%y%m%d%s.nc'
     
-    Nudge_Force_Opt = 1
+    Nudge_Force_Opt = 1 ! (=0 for target at next future time ; =1 for linear interpolation between 2 target datapoints)
     
-    Nudge_TimeScale_Opt = 0 ! (=0 for weak nudging & =1 for strong nudging)
+    Nudge_TimeScale_Opt = 0 ! (=0 for weak nudging [constant] & =1 for strong nudging [near target points])
     
     Nudge_Times_Per_Day= 4 ! (for 6-hourly target data for nudging - e.g. ERA5)
     
     Model_Times_Per_Day= 48 ! (for a model with a 30-minute timestep - like NorESM2.2-AMIP)
     
-    Nudge_Uprof = 2
+    Nudge_Uprof = 2 ! (=0 for nudging off ; =1 for global nudging ; =2 for regional nudging)
     
-    Nudge_Ucoef =1.00
+    Nudge_Ucoef =1.00 ! (set nudging strength to anything between 0 and 1)
     
     Nudge_Vprof = 2
     
@@ -96,14 +96,23 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
 
 The variables are described `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_ in more detail, but we provide a short summary here:
 
-* bla
+* ``Nudge_Path``, ``Nudge_File_Template`` specify path & file-name structure of target data (e.g. ERA5 - for more details on available nudging target data below).
 
-* Nudge_Uprof (and equivalents for V, T, Q, PS) - states what kind of nudging in, e.g.,  U we want (=0 no nudging, =1 global nudging, =2 regional nudging):
+* ``Nudge_Force_Opt`` specifies whether we nudge to the next target data (=0) or linearly interpolate between consecutive target data points (=1).
 
-  * For global nudging of U,V specify ``Nudge_Uprof = Nudge_Vprof = 1, Nudge_PSprof = Nudge_Tprof = Nudge_Qprof = 0``
+* ``Nudge_TimeScale_Opt`` specifies whether nudging timescale is constant (=0) or gets stronger closer to target values (=1).
 
-  * For regional nudging of U,V specify ``Nudge_Uprof = Nudge_Vprof = 2, Nudge_PSprof = Nudge_Tprof = Nudge_Qprof = 0``
+* ``Nudge_Times_Per_Day`` specifies the frequency of target data per day (=4 for 6-hourly target data)
+    
+* ``Model_Times_Per_Day`` specifies the number of model timesteps per day we wish to nudge (for a model with a 30-minute timestep - like NorESM2.2-AMIP - set to 48 if you wish to nudge *every* timestep).
+
+* ``Nudge_Uprof`` (and equivalents for V, T, Q, PS) states what kind of nudging in, e.g., U we want (=0 no nudging, =1 global nudging, =2 regional nudging):
+
+  * For global nudging of U,V specify ``Nudge_Uprof = Nudge_Vprof = 1``, ``Nudge_PSprof = Nudge_Tprof = Nudge_Qprof = 0``.
+
+  * For regional nudging of U,V specify ``Nudge_Uprof = Nudge_Vprof = 2``, ``Nudge_PSprof = Nudge_Tprof = Nudge_Qprof = 0``.
   
+* ``Nudge_Ucoef`` (and equivalents for V, T, Q, PS) specifies the strength of nudging for the specific variable, e.g. U (value between 0 and 1).
 
 
 At the moment there is the following capability for nudging in NorESM2.2:
