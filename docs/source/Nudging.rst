@@ -60,7 +60,7 @@ Once you have created a case folder ``<case-name>`` (e.g., see `here <https://no
  
 ----------------
 
-**Nudging Target Data**
+**Target Data**
 
 At the moment there is the following capability for nudging in NorESM2.2:
 
