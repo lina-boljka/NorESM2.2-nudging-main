@@ -15,9 +15,9 @@ To create an experiment ``case`` follow instructions on `NorESM webpage <https:/
 2) Then run command to create a new case, e.g., <case-name>:
   ``./create_newcase --case ~/<noresm-base>/cases/<case-name> --mach betzy --res f09_f09_mg17 --compset NFHISTfsstfrc2 --project <project-name>``
 
-Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing (generally recommended for NorESM), and the model will run with project resources <project-name>, typically of form "nn1234k" or similar. Note that different AMIP compsets can be found here: 
+  Here, we specify machine as "betzy", a historical AMIP compset with frc2 forcing (generally recommended for NorESM), and the model will run with project resources <project-name>, typically of form "nn1234k" or similar. Note that different AMIP compsets can be found here: 
 
-``vi <noresm-base>/components/cam/cime_config/config_compsets.xml``. 
+  ``vi <noresm-base>/components/cam/cime_config/config_compsets.xml``. 
 
 3) Enter the folder 
   ``cd ~/<noresm-base>/cases/<case-name>/``
