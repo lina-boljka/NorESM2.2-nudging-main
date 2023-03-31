@@ -26,8 +26,8 @@ To implement regional nudging in NorESM, use the latest version of the model Nor
 
 -------------------
 
-Support
-====
+**Support**
+
 
 If you have further questions please contact me on lina.boljka@uib.no.
 
