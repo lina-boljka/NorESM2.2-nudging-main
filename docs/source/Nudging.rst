@@ -61,7 +61,9 @@ Once you have created a case folder ``<case-name>`` (e.g., see `here <https://no
 At the moment there is the following capability for nudging in NorESM2.2:
 
 * Anomaly nudging to `historical AMIP experiment <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_ climatology with ERA5 anomalies over the period 1979-2016. Data is available for PS, U, V variables only. Set the following path & file-name in ``user_nl_cam``:
+
   ``Nudge_Path = '/cluster/projects/nn9039k/CAM_Nudging/met_data/era5_PSUV_f09L32_6hrAnomalySingleRecord/'``
+  
   ``Nudge_File_Template= 'era5-ano_PSUV_f09L32_6hr_r0_%y%m%d%s.nc'``
   
 * bla
