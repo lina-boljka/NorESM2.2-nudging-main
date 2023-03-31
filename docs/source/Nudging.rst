@@ -18,7 +18,7 @@ Below is "non-relevant" text.
 
 Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we show an example of such implementation in NorESM2.2, which is based on the CESM2.2.
 
-Once you have created a case folder ``<case-name>`` (e.g., see `here <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_), you can specify nudging (global or regional) in ``user_nl_cam``. The variables are described `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_ in more detail, but we provide a summary here as well (see also example below):
+Once you have created a case folder ``~/<noresm-base>/cases/<case-name>`` (e.g., see `here <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_), you can specify nudging (global or regional) in ``user_nl_cam``. The variables are described `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_ in more detail, but we provide a summary here as well (see also example below):
 
 * ``Nudge_Path``, ``Nudge_File_Template`` specify path & file-name structure of target data (e.g. ERA5 - for more details on available nudging target data below).
 
@@ -174,9 +174,23 @@ Here is an example of the nudging part of the namelist script (``user_nl_cam``) 
 
 To visualise the nudging window used (e.g., prior to implementing it in the model) do the following:
 
-1) ...
+1)  Navigate to Cam Tools folder with Nudging Window scripts within `NorESM2.2 <https://noresm22-nudging-regional.readthedocs.io/en/latest/Install-NorESM2.2.html>`_ dierctory <noresm-base>:
 
-2) ...
+  ``~/<noresm-base>/components/cam/tools/nudging/Lookat_NudgeWindow/``
+
+2) Copy the ``user_nl_cam`` script from ``~/<noresm-base>/cases/<case-name>`` directory to the ``Lookat_NudgeWindow`` folder and read the ``README`` file there. Make sure that you are in an environment where ``ncl`` is installed before running the following commands:
+
+  ``>> WRAPIT Read_Namelist.f90 Read_Namelist.stub``
+  
+  ``>> ncl Lookat_NudgeWindow.ncl``
+  
+  This should show figures with a X11 display, but if you set, e.g., ``wks = gsn_open_wks("png","Wcoef")`` in ``Lookat_NudgeWindow.ncl`` it will save the file as a pdf instead.
+
+The above example of ``user_nl_cam`` yields a nudging window in the horizontal and in the vertical as shown below.
+
+.. image:: path/filename.png
+  :width: 400
+  :alt: Alternative text
 
 ----------------
 
