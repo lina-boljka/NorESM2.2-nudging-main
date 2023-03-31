@@ -50,15 +50,11 @@ Once you have created a case folder ``<case-name>`` (e.g., see `here <https://no
  
 * ``Nudge_Vwin_Hindex``, ``Nudge_Vwin_Hdelta``, ``Nudge_Vwin_Lindex``, ``Nudge_Vwin_Ldelta`` specify the size of the "regional" nudging window in vertical direction:
 
-  * ``Nudge_Vwin_Hindex`` 
+  * ``Nudge_Vwin_Hindex`` & ``Nudge_Vwin_Lindex`` specify the window in terms of model indices: High **Hindex** (model surface) and Low **Lindex** (model top) transition levels. For nudging over all model levels set Lindex=0 and Hindex=NLEV+1 (in NorESM2.2-AMIP, Hindex = 33).
   
-  * ``Nudge_Vwin_Hdelta`` 
-  
-  * ``Nudge_Vwin_Lindex`` 
-  
-  * ``Nudge_Vwin_Ldelta``
+  * ``Nudge_Vwin_Hdelta`` & ``Nudge_Vwin_Ldelta`` specify over how many levels we taper off the data in terms of number of model level indices. For no tapering-off set the transition lengths to 0.001, otherwise set it to a value larger than 0.
     
- * ``Nudge_Hwin_Invert``, ``Nudge_Vwin_Invert`` is a logical specifying whether we nudge within the nudging window (.false.) or outside the nudging window (.true.) - separately for horizontal (**Hwin**) and vertical (**Vwin**) window.
+* ``Nudge_Hwin_Invert``, ``Nudge_Vwin_Invert`` is a logical specifying whether we nudge within the nudging window (.false.) or outside the nudging window (.true.) - separately for horizontal (**Hwin**) and vertical (**Vwin**) window.
  
 ----------------
 
