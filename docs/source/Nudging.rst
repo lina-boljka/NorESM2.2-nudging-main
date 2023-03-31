@@ -193,7 +193,7 @@ The above example of ``user_nl_cam`` yields a nudging window in the horizontal a
   :alt: Alternative text
 
 .. image:: Wcoef_new2.png
-  :width: 300
+  :width: 350
   :alt: Alternative text
 
 ----------------
