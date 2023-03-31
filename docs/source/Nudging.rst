@@ -16,7 +16,45 @@ Below is "non-relevant" text.
 
 Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we merely show an example (a summary) of such implementation in NorESM2.2, which is based on the CESM2.2.
 
+One you have created a case folder ``<case-name>`` (e.g., see `here <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_), you can specify nudging (global or regional) in ``user_nl_cam``
 
+.. admonition:: user_nl_cam
+
+  &chem_surfvals_nl
+  
+    ch4vmr         = -1.0D0
+    
+    co2vmr         = -1.0D0    
+    
+    f11vmr         = -1.0D0
+    
+    f12vmr         = -1.0D0
+    
+    flbc_file      = '/cluster/shared/noresm/inputdata/atm/waccm/lb/LBC_1750-2015_CMIP6_GlobAnnAvg_c180926.nc'
+    
+    flbc_list      = 'CO2','CH4','N2O','CFC11eq','CFC12'
+    
+    flbc_type      = 'SERIAL'
+    
+    n2ovmr         = -1.0D0
+    
+    scenario_ghg   = 'CHEM_LBC_FILE'
+    
+  /
+
+For global nudging specify ...
+
+For regional nudging specify ....
+  
+For further details on different variables used in the namelist file see `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. 
+
+At the moment there is the following capability for nudging in NorESM2.2:
+* Anomaly nudging to `historical AMIP experiment <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_ climatology with ERA5 anomalies over the period 1979-2016. Set the following path & file-name in ``user_nl_cam``:
+  ``Nudge_Path = '/cluster/projects/nn9039k/CAM_Nudging/met_data/era5_PSUV_f09L32_6hrAnomalySingleRecord/'``
+  ``Nudge_File_Template= 'era5-ano_PSUV_f09L32_6hr_r0_%y%m%d%s.nc'``
+* bla
+  
+If you do not have access to the data specified above please contact us (lina.boljka@uib.no).
 
 ---------------------
 
