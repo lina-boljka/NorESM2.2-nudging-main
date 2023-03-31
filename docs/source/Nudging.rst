@@ -38,7 +38,7 @@ One you have created a case folder ``<case-name>`` (e.g., see `here <https://nor
     
     Nudge_Uprof = 2 ! (=0 for nudging off ; =1 for global nudging ; =2 for regional nudging)
     
-    Nudge_Ucoef =1.00 ! (set nudging strength to anything between 0 and 1)
+    Nudge_Ucoef =1.00 ! (= anything between 0 and 1)
     
     Nudge_Vprof = 2
     
@@ -114,6 +114,31 @@ The variables are described `here <https://ncar.github.io/CAM/doc/build/html/use
   
 * ``Nudge_Ucoef`` (and equivalents for V, T, Q, PS) specifies the strength of nudging for the specific variable, e.g. U (value between 0 and 1).
 
+* ``Nudge_Beg_Year``, ``Nudge_Beg_Month``, ``Nudge_Beg_Day``, ``Nudge_End_Year``, ``Nudge_End_Month``, ``Nudge_End_Day`` specify the start (**Beg**) and end (**End**) date (Year, Month, Day) of nudging. See example above.
+
+* ``Nudge_Hwin_lat0``, ``Nudge_Hwin_latWidth``, ``Nudge_Hwin_latDelta`` specify the size of the regional nudging window in latitudinal direction:
+  
+  * ``Nudge_Hwin_lat0`` is central latitude of nudging window.
+  
+  * ``Nudge_Hwin_latWidth`` is the width of the nudging window in latitude direction.
+  
+  * ``Nudge_Hwin_latDelta`` specifies over how many latitudes we taper-off the data (typically applied to +/- latDelta around the edge of the window).
+  
+* ``Nudge_Hwin_lon0``, ``Nudge_Hwin_lonWidth``, ``Nudge_Hwin_lonDelta`` specify the size of the regional nudging window in longitudinal direction (equivalent to the latitudinal window above). 
+ 
+* ``Nudge_Vwin_Hindex``, ``Nudge_Vwin_Hdelta``, ``Nudge_Vwin_Lindex``, ``Nudge_Vwin_Ldelta`` specify the size of the "regional" nudging window in vertical direction:
+
+  * ``Nudge_Vwin_Hindex`` 
+  
+  * ``Nudge_Vwin_Hdelta`` 
+  
+  * ``Nudge_Vwin_Lindex`` 
+  
+  * ``Nudge_Vwin_Ldelta``
+    
+ * ``Nudge_Hwin_Invert``, ``Nudge_Vwin_Invert`` is a logical specifying whether we nudge within the nudging window (.false.) or outside the nudging window (.true.) - separately for horizontal (**Hwin**) and vertical (**Vwin**) window.
+
+----------------
 
 At the moment there is the following capability for nudging in NorESM2.2:
 
