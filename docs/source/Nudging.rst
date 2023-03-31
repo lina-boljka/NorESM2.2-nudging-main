@@ -14,6 +14,9 @@ Below is "non-relevant" text.
 
 ---------------------
 
+Implementation
+====
+
 Regional nudging has been implemented in the latest version of the CESM (CESM2.2, CAM6.3) model, thus the details of the implementation can be found  `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_. Below we show an example of such implementation in NorESM2.2, which is based on the CESM2.2.
 
 Once you have created a case folder ``<case-name>`` (e.g., see `here <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_), you can specify nudging (global or regional) in ``user_nl_cam``. The variables are described `here <https://ncar.github.io/CAM/doc/build/html/users_guide/physics-modifications-via-the-namelist.html#nudging>`_ in more detail, but we provide a summary here as well (see also example below):
@@ -58,6 +61,9 @@ Once you have created a case folder ``<case-name>`` (e.g., see `here <https://no
  
 ----------------
 
+Nudging Target Data
+====
+
 At the moment there is the following capability for nudging in NorESM2.2:
 
 * Anomaly nudging to `historical AMIP experiment <https://noresm22-nudging-regional.readthedocs.io/en/latest/AMIP-configuration.html>`_ climatology with ERA5 anomalies over the period 1979-2016. Data is available for PS, U, V variables only. Set the following path & file-name in ``user_nl_cam``:
@@ -71,6 +77,9 @@ At the moment there is the following capability for nudging in NorESM2.2:
 For now, we have only tested U & V nudging, while PS nudging is also available. We expect to increase the number of variables available for nudging (to, e.g., T, Q). If you do not have access to the data specified above please contact us (lina.boljka@uib.no).
 
 --------------------
+
+Example
+====
 
 Here is an example of the nudging part of the namelist script (``user_nl_cam``) for regional nudging over the North Pacific.
  
@@ -152,6 +161,9 @@ Here is an example of the nudging part of the namelist script (``user_nl_cam``) 
 
 ----------------
 
+Visualisation of the Nudging Window
+====
+
 To visualise the nudging window used (e.g., prior to implementing it in the model) do the following:
 
 1) ...
@@ -159,6 +171,9 @@ To visualise the nudging window used (e.g., prior to implementing it in the mode
 2) ...
 
 ----------------
+
+Topography data
+====
 
 Also, topography data from a reanalysis can be specified in ``user_nl_cam``, although be aware that ERA5 topography may be very different from model topography and thus care must be taken!
 
