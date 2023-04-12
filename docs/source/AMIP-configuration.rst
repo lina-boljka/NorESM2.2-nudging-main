@@ -7,7 +7,7 @@ AMIP configuration
 
 ---------------------
 
-To create an experiment ``case`` follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_ or, more specifically, for AMIP experiments follow instructions `here <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_. Below we show an example for only one specific compset, which has historical prescribed sea-surface-temperatures (SSTs) and historical forcing, typically 1979-2014 (or longer).
+To create an experiment ``case`` follow instructions on `NorESM webpage <https://noresm-docs.readthedocs.io/en/noresm2/configurations/configurations.html>`_ or, more specifically, for AMIP experiments follow instructions `here <https://noresm-docs.readthedocs.io/en/noresm2/configurations/amips.html>`_. Below we show an example for only one specific compset, which has historical prescribed sea-surface-temperatures (SSTs) and historical forcing, typically 1979-2014 (or longer).
 
 1) First enter the ``scripts`` folder of the  `NorESM2.2 <https://noresm22-nudging-regional.readthedocs.io/en/latest/Install-NorESM2.2.html>`_ directory: 
   ``cd ~/<noresm-base>/cime/scripts/`` 
@@ -50,5 +50,5 @@ To create an experiment ``case`` follow instructions on `NorESM webpage <https:/
 
 Note that the ``flbc_file`` path above is only relevant for "betzy" machine and can be set to another file if relevant. These variables (especially those set to "-1.0D0" should be specified to avoid an error where model is trying to run with both constant GHG/CFC gases and with time-evolving gases.
 
-4) Change other variables in user_nl_cam or other components' namelists, set environment variables in files starting with "env_", e.g., "env_run.xml" and setup, build and submit the model as shown on `NorESM webpage <https://noresm-docs.readthedocs.io/en/latest/configurations/amips.html>`_.
+4) Change other variables in user_nl_cam or other components' namelists, set environment variables in files starting with "env_", e.g., "env_run.xml" and setup, build and submit the model as shown on `NorESM webpage <https://noresm-docs.readthedocs.io/en/noresm2/configurations/amips.html>`_.
 
